@@ -1,0 +1,43 @@
+# workflow demo that cleans the config, does a content update, then configures a basic internet gateway
+
+name: eSportsskillet_setup_workflow_panos_v90
+label: v9.0 full setup for eSports Skillet
+description: |
+  this workflow steps through diffrent configuration flows
+type: workflow
+
+labels:
+    collection:
+      - eSports
+      - Education
+
+variables:
+# in the future can let the user choose the network layer option as a workflow stage
+  - name: config_type
+    description: Create new configuration or merge to existing configuration?
+    default: new_configuration
+    type_hint: dropdown
+    dd_list:
+      - key: New configuration
+        value: new_configuration
+#      - key: Merge configuration
+#        value: merge_configuration
+#  - name: add_options
+#    description: select additional eSports configuration options
+#    default: []
+#    type_hint: checkbox
+#    cbx_list:
+#      - key: add IronSkillet
+#        value: ironskillet
+
+
+snippets:
+# workflow stages for full refresh and configuration
+# reset config to empty state
+# poor mans userid based on local DHCP log events
+#  - name: ironskillet_eSports_20200206_1
+#    when: "'ironskillet' in add_options"
+  - name: new_configuration_workflow_panos_v90_eSports_20200206_1
+    when: "'new_configuration' in config_type"
+  - name: merge_configuration_workflow_panos_v90_eSports_20200206_1
+    when: "'merge_configuration' in workflow_options"
