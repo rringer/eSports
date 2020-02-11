@@ -1,0 +1,37 @@
+{%- if network_type == "vw_network" %}
+<entry name="{{ zone_trust }}">
+  <network>
+    <layer2/>
+    <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
+    <log-setting>default</log-setting>
+    <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+  </network>
+  <enable-user-identification>yes</enable-user-identification>
+</entry>
+<entry name="{{ zone_untrust }}">
+  <network>
+    <layer2/>
+    <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
+    <log-setting>default</log-setting>
+    <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+  </network>
+</entry>
+{% else %}
+<entry name="{{ zone_trust }}">
+  <network>
+    <layer3/>
+    <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
+    <log-setting>default</log-setting>
+    <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+  </network>
+  <enable-user-identification>yes</enable-user-identification>
+</entry>
+<entry name="{{ zone_untrust }}">
+  <network>
+    <layer3/>
+    <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
+    <log-setting>default</log-setting>
+    <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+  </network>
+</entry>
+{% endif %}

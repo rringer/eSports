@@ -1,0 +1,29 @@
+<entry name="eSports - Streaming">
+  <color>color24</color>
+  <comments>eSports Streaming </comments>
+</entry>
+<entry name="eSports - Games">
+  <color>color30</color>
+  <comments>eSports Games</comments>
+</entry>
+<entry name="eSports - Game Launchers">
+  <color>color5</color>
+</entry>
+<entry name="Outbound">
+  <comments>Outbound to the Internet</comments>
+</entry>
+<entry name="Inbound">
+  <comments>Inbound from the Internet</comments>
+</entry>
+<entry name="Internal">
+  <comments>Internal to Internal</comments>
+</entry>
+<entry name="iron-skillet-version">
+  <comments>version 0.0.4 for 9.0: version of this IronSkillet template file</comments>
+</entry>
+<entry name="eSports - VoIP">
+  <color>color35</color>
+</entry>
+<entry name="eSports">
+  <color>color2</color>
+</entry>

@@ -1,0 +1,6 @@
+<entry name="Sinkhole-IPv4">
+    <fqdn>sinkhole.paloaltonetworks.com</fqdn>
+</entry>
+<entry name="Sinkhole-IPv6">
+<ip-netmask>2600:5200::1</ip-netmask>
+</entry>

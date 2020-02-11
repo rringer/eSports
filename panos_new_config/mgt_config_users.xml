@@ -1,0 +1,8 @@
+<entry name="{{ TARGET_USERNAME }}">
+  <phash>{{ TARGET_PASSWORD }}</phash>
+  <permissions>
+    <role-based>
+      <superuser>yes</superuser>
+    </role-based>
+  </permissions>
+</entry>
