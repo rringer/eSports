@@ -138,7 +138,6 @@ snippets:
   - name: application_tag
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/application-tag
     file: application_tag.xml
-    
   - name: log_settings_profiles
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/log-settings/profiles
     file: log_settings_profiles.xml
@@ -187,7 +186,6 @@ snippets:
     when: "'qos_yes' in policy_qos"
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/qos
     file: rulebase_qos.xml
-
   - name: decryption_rules
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/rulebase/decryption
     file: rulebase_decryption.xml
