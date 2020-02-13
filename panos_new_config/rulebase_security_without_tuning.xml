@@ -117,10 +117,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>L3-Untrust</member>
+      <member>{{ zone_untrust }}</member>
     </to>
     <from>
-      <member>L3-Trust</member>
+      <member>{{ zone_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -161,10 +161,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>L3-Untrust</member>
+      <member>{{ zone_untrust }}</member>
     </to>
     <from>
-      <member>L3-Trust</member>
+      <member>{{ zone_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -208,10 +208,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>L2-Untrust</member>
+      <member>{{ zone_untrust }}</member>
     </to>
     <from>
-      <member>L2-Trust</member>
+      <member>{{ zone_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -254,10 +254,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>L2-Untrust</member>
+      <member>{{ zone_untrust }}</member>
     </to>
     <from>
-      <member>L2-Trust</member>
+      <member>{{ zone_trust }}</member>
     </from>
     <source>
       <member>any</member>
