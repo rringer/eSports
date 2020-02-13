@@ -1,5 +1,5 @@
 {%- if network_type == "vw_network" %}
-<entry name="{{ zone_trust }}">
+<entry name="{{ zone_name_trust }}">
   <network>
     <layer2/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
@@ -8,7 +8,7 @@
   </network>
   <enable-user-identification>yes</enable-user-identification>
 </entry>
-<entry name="{{ zone_untrust }}">
+<entry name="{{ zone_name_untrust }}">
   <network>
     <layer2/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
@@ -17,7 +17,7 @@
   </network>
 </entry>
 {% else %}
-<entry name="{{ zone_trust }}">
+<entry name="{{ zone_name_trust }}">
   <network>
     <layer3/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
@@ -26,7 +26,7 @@
   </network>
   <enable-user-identification>yes</enable-user-identification>
 </entry>
-<entry name="{{ zone_untrust }}">
+<entry name="{{ zone_name_untrust }}">
   <network>
     <layer3/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
