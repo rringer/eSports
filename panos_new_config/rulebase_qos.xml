@@ -1,74 +1,76 @@
-<entry name="eSports VoIP">
-  <dscp-tos>
-    <any/>
-  </dscp-tos>
-  <from>
-    <member>{{ zone_name_trust }}</member>
-  </from>
-  <to>
-    <member>{{ zone_name_untrust }}</member>
-  </to>
-  <source>
-    <member>any</member>
-  </source>
-  <destination>
-    <member>any</member>
-  </destination>
-  <source-user>
-    <member>any</member>
-  </source-user>
-  <category>
-    <member>any</member>
-  </category>
-  <application>
-    <member>eSports VoIP</member>
-  </application>
-  <service>
-    <member>application-default</member>
-  </service>
-  <tag>
-    <member>eSports - VoIP</member>
-  </tag>
-  <action>
-    <class>1</class>
-  </action>
-  <description>eSports VoIP applications requiring the use of the priority queue (delay and jitter sensitive)</description>
-  <group-tag>eSports</group-tag>
-</entry>
-<entry name="eSports Games">
-  <dscp-tos>
-    <any/>
-  </dscp-tos>
-  <from>
-    <member>{{ zone_name_trust }}</member>
-  </from>
-  <to>
-    <member>{{ zone_name_untrust }}</member>
-  </to>
-  <source>
-    <member>any</member>
-  </source>
-  <destination>
-    <member>any</member>
-  </destination>
-  <source-user>
-    <member>any</member>
-  </source-user>
-  <category>
-    <member>any</member>
-  </category>
-  <application>
-    <member>eSports Games</member>
-  </application>
-  <service>
-    <member>application-default</member>
-  </service>
-  <tag>
-    <member>eSports - Games</member>
-  </tag>
-  <action>
-    <class>2</class>
-  </action>
-  <description>eSports applications mapped to class 2 (policing and bandwidth guarantee separate from default queue)</description>
-  <group-tag>eSports</group-tag>
-</entry>
+<rules>
+  <entry name="eSports VoIP">
+    <dscp-tos>
+      <any/>
+    </dscp-tos>
+    <from>
+      <member>{{ zone_name_trust }}</member>
+    </from>
+    <to>
+      <member>{{ zone_name_untrust }}</member>
+    </to>
+    <source>
+      <member>any</member>
+    </source>
+    <destination>
+      <member>any</member>
+    </destination>
+    <source-user>
+      <member>any</member>
+    </source-user>
+    <category>
+      <member>any</member>
+    </category>
+    <application>
+      <member>eSports VoIP</member>
+    </application>
+    <service>
+      <member>application-default</member>
+    </service>
+    <tag>
+      <member>eSports - VoIP</member>
+    </tag>
+    <action>
+      <class>1</class>
+    </action>
+    <description>eSports VoIP applications requiring the use of the priority queue (delay and jitter sensitive)</description>
+    <group-tag>eSports</group-tag>
+  </entry>
+  <entry name="eSports Games">
+    <dscp-tos>
+      <any/>
+    </dscp-tos>
+    <from>
+      <member>{{ zone_name_trust }}</member>
+    </from>
+    <to>
+      <member>{{ zone_name_untrust }}</member>
+    </to>
+    <source>
+      <member>any</member>
+    </source>
+    <destination>
+      <member>any</member>
+    </destination>
+    <source-user>
+      <member>any</member>
+    </source-user>
+    <category>
+      <member>any</member>
+    </category>
+    <application>
+      <member>eSports Games</member>
+    </application>
+    <service>
+      <member>application-default</member>
+    </service>
+    <tag>
+      <member>eSports - Games</member>
+    </tag>
+    <action>
+      <class>2</class>
+    </action>
+    <description>eSports applications mapped to class 2 (policing and bandwidth guarantee separate from default queue)</description>
+    <group-tag>eSports</group-tag>
+  </entry>
+</rules>
