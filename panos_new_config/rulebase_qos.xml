@@ -1,5 +1,5 @@
 {%- if network_type == "l3_network" %}
-<entry name="eSports VoIP" uuid="3885915d-e64c-4226-a115-b69dbd631ff0">
+<entry name="eSports VoIP">
   <dscp-tos>
     <any/>
   </dscp-tos>
@@ -36,7 +36,7 @@
   <description>eSports VoIP applications requiring the use of the priority queue (delay and jitter sensitive)</description>
   <group-tag>eSports</group-tag>
 </entry>
-<entry name="eSports Games" uuid="d4e66b5e-77ef-43c9-be55-3d4117adcc44">
+<entry name="eSports Games">
   <dscp-tos>
     <any/>
   </dscp-tos>
@@ -74,7 +74,7 @@
   <group-tag>eSports</group-tag>
 </entry>
 {%- elif network_type == "vw_network" %}
-<entry name="eSports VoIP" uuid="6cb9781c-198d-4254-9be0-f4222ce17176">
+<entry name="eSports VoIP">
   <dscp-tos>
     <any/>
   </dscp-tos>
@@ -111,7 +111,7 @@
   <description>eSports VoIP applications requiring the use of the priority queue (delay and jitter sensitive)</description>
   <group-tag>eSports</group-tag>
 </entry>
- <entry name="eSports Games" uuid="c9c56a73-7ec8-4576-a918-6213337593ed">
+ <entry name="eSports Games">
   <dscp-tos>
     <any/>
   </dscp-tos>
