@@ -35,7 +35,7 @@
   <description>eSports VoIP applications requiring the use of the priority queue (delay and jitter sensitive)</description>
   <group-tag>eSports</group-tag>
 </entry>
- <entry name="eSports Games">
+<entry name="eSports Games">
   <dscp-tos>
     <any/>
   </dscp-tos>
