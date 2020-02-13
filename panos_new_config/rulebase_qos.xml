@@ -26,6 +26,9 @@
   <service>
     <member>application-default</member>
   </service>
+  <tag>
+    <member>eSports - VoIP</member>
+  </tag>
   <action>
     <class>1</class>
   </action>
@@ -60,6 +63,9 @@
   <service>
     <member>application-default</member>
   </service>
+  <tag>
+    <member>eSports - Games</member>
+  </tag>
   <action>
     <class>2</class>
   </action>
