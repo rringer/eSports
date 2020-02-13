@@ -138,6 +138,9 @@ snippets:
   - name: application_tag
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/application-tag
     file: application_tag.xml
+  - name: application_group
+    xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/application-group
+    file: application_group.xml
   - name: log_settings_profiles
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/log-settings/profiles
     file: log_settings_profiles.xml
