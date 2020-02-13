@@ -117,10 +117,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -161,10 +161,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -207,10 +207,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -247,10 +247,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -293,10 +293,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
@@ -339,10 +339,10 @@
       </group>
     </profile-setting>
     <to>
-      <member>{{ zone_untrust }}</member>
+      <member>{{ zone_name_untrust }}</member>
     </to>
     <from>
-      <member>{{ zone_trust }}</member>
+      <member>{{ zone_name_trust }}</member>
     </from>
     <source>
       <member>any</member>
