@@ -69,6 +69,6 @@
   <action>
     <class>2</class>
   </action>
-  <description>eSports applications mapped to class 2 (policing &amp; bandwidth guarantee separate from default queue)</description>
+  <description>eSports applications mapped to class 2 (policing and bandwidth guarantee separate from default queue)</description>
   <group-tag>eSports</group-tag>
 </entry>
