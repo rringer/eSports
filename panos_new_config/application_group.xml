@@ -1,0 +1,91 @@
+<entry name="eSports Games">
+  <members>
+    <member>fortnite</member>
+    <member>apex-legends</member>
+    <member>league-of-legends</member>
+    <member>minecraft</member>
+    <member>call-of-duty</member>
+    <member>starcraft</member>
+  </members>
+</entry>
+<entry name="eSports Launchers">
+  <members>
+    <member>battle.net</member>
+    <member>playstation-network</member>
+    <member>steam</member>
+    <member>ubisoft-uplay</member>
+    <member>xbox-live</member>
+    <member>origin</member>
+    <member>source-engine</member>
+  </members>
+</entry>
+<entry name="eSports VoIP">
+  <members>
+    <member>ventrilo</member>
+    <member>teamspeak</member>
+    <member>discord</member>
+  </members>
+</entry>
+<entry name="Minecraft Dependencies">
+  <members>
+    <member>ssl</member>
+    <member>web-browsing</member>
+  </members>
+</entry>
+<entry name="League of Legends Dependencies">
+  <members>
+    <member>bittorrent</member>
+    <member>rtcp</member>
+    <member>rtmp</member>
+    <member>rtp-base</member>
+    <member>ssl</member>
+    <member>stun</member>
+    <member>web-browsing</member>
+  </members>
+</entry>
+<entry name="Fortnite Dependencies">
+  <members>
+    <member>ssl</member>
+    <member>web-browsing</member>
+    <member>google-analytics</member>
+  </members>
+</entry>
+<entry name="Apex Legends Dependencies">
+  <members>
+    <member>ssl</member>
+    <member>web-browsing</member>
+  </members>
+</entry>
+<entry name="eSports Game Dependencies">
+  <members>
+    <member>Apex Legends Dependencies</member>
+    <member>Fortnite Dependencies</member>
+    <member>League of Legends Dependencies</member>
+    <member>Minecraft Dependencies</member>
+  </members>
+</entry>
+<entry name="XBox Live Dependencies">
+  <members>
+    <member>ike</member>
+    <member>ipsec-esp-udp</member>
+    <member>kerberos</member>
+    <member>teredo</member>
+  </members>
+</entry>
+<entry name="Origin Dependencies">
+  <members>
+    <member>jabber</member>
+  </members>
+</entry>
+<entry name="Steam Dependencies">
+  <members>
+    <member>source-engine</member>
+  </members>
+</entry>
+<entry name="eSports Launcher Dependencies">
+  <members>
+    <member>Origin Dependencies</member>
+    <member>Steam Dependencies</member>
+    <member>XBox Live Dependencies</member>
+  </members>
+</entry>
