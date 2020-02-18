@@ -1,10 +1,18 @@
 <ctd>
   <strip-x-fwd-for>yes</strip-x-fwd-for>
   <x-forwarded-for>yes</x-forwarded-for>
+  <allow-http-range>no</allow-http-range>
+  <tcp-bypass-exceed-queue>no</tcp-bypass-exceed-queue>
+  <udp-bypass-exceed-queue>no</udp-bypass-exceed-queue>
 </ctd>
 <management>
   <enable-log-high-dp-load>yes</enable-log-high-dp-load>
   <max-rows-in-csv-export>1048576</max-rows-in-csv-export>
+  <api>
+    <key>
+      <lifetime>525600</lifetime>
+    </key>
+  </api>
   <admin-lockout>
     <failed-attempts>5</failed-attempts>
     <lockout-time>30</lockout-time>
