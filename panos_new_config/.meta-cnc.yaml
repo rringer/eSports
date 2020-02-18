@@ -69,6 +69,7 @@ variables:
         value: l3_network
   - name: advanced_mode
     description: Edit advanced options
+    default: advanced_mode_no
     type_hint: dropdown
     dd_list:
       - key: Yes
