@@ -67,6 +67,54 @@ variables:
         value: vw_network
       - key: Layer3
         value: l3_network
+  - name: interface_trust
+    description: Trusted zone interface
+    default: ethernet1/1
+    type_hint: dropdown
+    source: interface_names
+  - name: interface_trust_type
+    description: Firewall trusted interface IP type
+    default: static
+    help_text: Not used in Virtual Wire deployments
+    type_hint: dropdown
+    dd_list:
+      - key: dhcp-client
+        value: dhcp
+      - key: static
+        value: static
+  - name: interface_trust_ip
+    description: Firewall trusted interface IP
+    help_text: Not used in Virtual Wire deployments
+    default: 192.0.2.1/24
+    type_hint: text
+  - name: interface_untrust
+    description: Untrusted zone interface
+    default: ethernet1/2
+    type_hint: dropdown
+    source: interface_names
+  - name: interface_untrust_type
+    description: Firewall untrusted interface IP type
+    default: static
+    help_text: Not used in Virtual Wire deployments
+    type_hint: dropdown
+    dd_list:
+      - key: dhcp-client
+        value: dhcp
+      - key: static
+        value: static
+  - name: interface_untrust_ip
+    description: Firewall untrusted interface IP
+    help_text: Not used in Virtual Wire deployments
+    default: 192.0.2.1/24
+    type_hint: text
+  - name: zone_name_trust
+    description: Name of trusted zonee
+    default: Trust
+    type_hint: text
+  - name: zone_name_untrust
+    description: Name of untrusted zonee
+    default: Untrust
+    type_hint: text
 #  - name: advanced_mode
 #    description: Edit advanced options
 #    default: advanced_mode_no
@@ -85,16 +133,6 @@ variables:
     when: "'advanced_mode_yes' in advanced_mode"
     description: secondary dns server
     default: 4.2.2.2
-    type_hint: text
-  - name: zone_name_trust
-    when: "'advanced_mode_yes' in advanced_mode"
-    description: Name of trusted zonee
-    default: Trust
-    type_hint: text
-  - name: zone_name_untrust
-    when: "'advanced_mode_yes' in advanced_mode"
-    description: Name of untrusted zonee
-    default: Untrust
     type_hint: text
   - name: policy_qos
     when: "'advanced_mode_yes' in advanced_mode"
@@ -216,6 +254,12 @@ snippets:
   - name: zone_protection_profile
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/profiles/zone-protection-profile
     file: zone_protection_profile.xml
+  - name: interface
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
+    file: network_interface_.xml
+  - name: virtual_router
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
+    file: network_virtual_router.xml
   - name: zone
     xpath: /config/devices/entry[@name='localhost.localdomain']/vsys/entry[@name='vsys1']/zone
     file: zone.xml
