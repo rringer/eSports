@@ -117,9 +117,9 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-#  - name: device_config
-#    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig
-#    file: device_config.xml
+  - name: device_config
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig
+    file: device_config.xml
 #  - name: mgt_config_users
 #    xpath: /config/mgt-config/users
 #    file: mgt_config_users.xml
