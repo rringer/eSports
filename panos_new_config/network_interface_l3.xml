@@ -18,7 +18,7 @@
       <dhcp-client/>
       {% else %}
       <ip>
-        <entry name="{{ interface_trust_IP }}"/>
+        <entry name="{{ interface_trust_ip }}"/>
       </ip>
       {% endif %}
     </layer3>
@@ -42,7 +42,7 @@
       <dhcp-client/>
       {% else %}
       <ip>
-        <entry name="{{ interface_untrust_IP }}"/>
+        <entry name="{{ interface_untrust_ip }}"/>
       </ip>
       {% endif %}
     </layer3>
