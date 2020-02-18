@@ -115,6 +115,11 @@ variables:
     description: Name of untrusted zonee
     default: Untrust
     type_hint: text
+  - name: interface_virtual_wire_name
+    description: Firewall Virtual Wire name
+    help_text: Not used in L3 deployments
+    default: esports_virtual_wire
+    type_hint: text
 #  - name: advanced_mode
 #    description: Edit advanced options
 #    default: advanced_mode_no
@@ -262,7 +267,11 @@ snippets:
     when: "'vw_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
     file: network_interface_vw.xml
-  - name: virtual_router
+  - name: virtual_wire
+    when: "'vw_network' in network_type"
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-wire
+    file: network_virtual_wire.xml
+   - name: virtual_router
     when: "'l3_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: network_virtual_router.xml
