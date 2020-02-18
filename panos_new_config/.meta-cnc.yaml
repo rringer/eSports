@@ -58,14 +58,6 @@ variables:
     toggle_hint:
       source: MGMT_TYPE
       value: static
-  - name: DNS_1
-    description: primary dns server
-    default: 8.8.8.8
-    type_hint: text
-  - name: DNS_2
-    description: secondary dns server
-    default: 4.2.2.2
-    type_hint: text
   - name: network_type
     description: Choose to deploy as Virtual Wire or Layer3 interface
     default: l3_network
@@ -75,15 +67,36 @@ variables:
         value: vw_network
       - key: Layer3
         value: l3_network
+  - name: advanced_mode
+    description: Edit advanced options
+    type_hint: dropdown
+    dd_list:
+      - key: Yes
+        value: advanced_mode_yes
+      - key: No
+        value: advanced_mode_no
+  - name: DNS_1
+    when: "'advanced_mode_yes' in advanced_mode"
+    description: primary dns server
+    default: 8.8.8.8
+    type_hint: text
+  - name: DNS_2
+    when: "'advanced_mode_yes' in advanced_mode"
+    description: secondary dns server
+    default: 4.2.2.2
+    type_hint: text
   - name: zone_name_trust
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Name of trusted zonee
     default: Trust
     type_hint: text
   - name: zone_name_untrust
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Name of untrusted zonee
     default: Untrust
     type_hint: text
   - name: policy_qos
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Add QoS Rules for VoIP & eSports
     default: qos_yes
     type_hint: dropdown
@@ -93,6 +106,7 @@ variables:
       - key: No
         value: qos_no
   - name: tuning_rule
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Add a any/any outbound rule for tuning?
     default: tuning_no
     type_hint: dropdown
@@ -102,26 +116,32 @@ variables:
       - key: No
         value: tuning_no
   - name: syslog_server_ip
+    when: "'advanced_mode_yes' in advanced_mode"
     description: IP address of Syslog Server
     default: 192.0.2.1
     type_hint: IP
   - name: email_from
+    when: "'advanced_mode_yes' in advanced_mode"
     description: From Email address for NGFW
     default: sentfrom@yourdomain.com
     type_hint: text
   - name: email_to
+    when: "'advanced_mode_yes' in advanced_mode"
     description: To Email address for NGFW
     default: sendto@yourdomain.com
     type_hint: text
   - name: email_gateway
+    when: "'advanced_mode_yes' in advanced_mode"
     description: IP address of Email gateway
     default: 192.0.2.1
     type_hint: IP
   - name: NTP_1
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Network Time Protocol Server
     default: 0.pool.ntp.org
     type_hint: text
   - name: NTP_2
+    when: "'advanced_mode_yes' in advanced_mode"
     description: Network Time Protocol Server 2
     default: 1.pool.ntp.org
     type_hint: text
