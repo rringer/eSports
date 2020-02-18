@@ -67,15 +67,15 @@ variables:
         value: vw_network
       - key: Layer3
         value: l3_network
-  - name: advanced_mode
-    description: Edit advanced options
-    default: advanced_mode_no
-    type_hint: dropdown
-    dd_list:
-      - key: Yes
-        value: advanced_mode_yes
-      - key: No
-        value: advanced_mode_no
+#  - name: advanced_mode
+#    description: Edit advanced options
+#    default: advanced_mode_no
+#    type_hint: dropdown
+#    dd_list:
+#      - key: Yes
+#        value: advanced_mode_yes
+#      - key: No
+#        value: advanced_mode_no
   - name: DNS_1
     when: "'advanced_mode_yes' in advanced_mode"
     description: primary dns server
