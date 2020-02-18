@@ -22,13 +22,13 @@ variables:
         value: new_configuration
 #      - key: Merge configuration
 #        value: merge_configuration
-#  - name: add_options
-#    description: select additional eSports configuration options
-#    default: []
-#    type_hint: checkbox
-#    cbx_list:
-#      - key: add IronSkillet
-#        value: ironskillet
+  - name: add_options
+    description: select additional eSports configuration options
+    default: []
+    type_hint: checkbox
+    cbx_list:
+      - key: Content Update
+        value: content_update
 
 
 snippets:
@@ -37,6 +37,8 @@ snippets:
 # poor mans userid based on local DHCP log events
 #  - name: ironskillet_eSports_20200206_1
 #    when: "'ironskillet' in add_options"
+  - name: ngfw_content_update_eSports_20200206_1
+    when: "'content_update' in add_options"
   - name: new_configuration_workflow_panos_v90_eSports_20200206_1
     when: "'new_configuration' in config_type"
   - name: merge_configuration_workflow_panos_v90_eSports_20200206_1
