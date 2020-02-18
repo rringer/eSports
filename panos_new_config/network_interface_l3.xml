@@ -14,13 +14,13 @@
       <lldp>
         <enable>no</enable>
       </lldp>
-	{%- if interface_trust_type == "dhcp" %}
+      {%- if interface_trust_type == "dhcp" %}
       <dhcp-client/>
-	{% else %}
-	<ip>
+      {% else %}
+      <ip>
         <entry name="{{ interface_trust_IP }}"/>
       </ip>
-	{% endif %}
+      {% endif %}
     </layer3>
   </entry>
   <entry name="{{ interface_untrust }}">
@@ -38,13 +38,13 @@
       <lldp>
         <enable>no</enable>
       </lldp>
-	{%- if interface_untrust_type == "dhcp" %}
+      {%- if interface_untrust_type == "dhcp" %}
       <dhcp-client/>
-	{% else %}
-	  <ip>
+      {% else %}
+      <ip>
         <entry name="{{ interface_untrust_IP }}"/>
       </ip>
-	{% endif %}
-	</layer3>
+      {% endif %}
+    </layer3>
   </entry>
 </ethernet>
