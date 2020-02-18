@@ -113,6 +113,14 @@ variables:
     description: IP address of Email gateway
     default: 192.0.2.1
     type_hint: IP
+  - name: NTP_1
+    description: Network Time Protocol Server
+    default: 0.pool.ntp.org
+    type_hint: text
+  - name: NTP_2
+    description: Network Time Protocol Server 2
+    default: 1.pool.ntp.org
+    type_hint: text
 
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
