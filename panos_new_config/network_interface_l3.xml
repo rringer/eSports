@@ -1,4 +1,3 @@
-{%- if network_type == "l3_network" %}
 <ethernet>
   <entry name="{{ interface_trust }}">
     <layer3>
@@ -49,21 +48,3 @@
 	</layer3>
   </entry>
 </ethernet>
-{% elif %}
-<ethernet>
-  <entry name="{{ interface_trust }}">
-    <virtual-wire>
-      <lldp>
-        <enable>no</enable>
-      </lldp>
-    </virtual-wire>
-  </entry>
-  <entry name="{{ interface_untrust }}">
-    <virtual-wire>
-      <lldp>
-        <enable>no</enable>
-      </lldp>
-    </virtual-wire>
-  </entry>
-</ethernet>
-{% endif %}
