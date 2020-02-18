@@ -5,11 +5,6 @@
 <management>
   <enable-log-high-dp-load>yes</enable-log-high-dp-load>
   <max-rows-in-csv-export>1048576</max-rows-in-csv-export>
-  <api>
-    <key>
-      <lifetime>{{ API_KEY_LIFETIME }}</lifetime>
-    </key>
-  </api>
   <admin-lockout>
     <failed-attempts>5</failed-attempts>
     <lockout-time>30</lockout-time>
