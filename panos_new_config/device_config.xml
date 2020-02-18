@@ -1,13 +1,16 @@
-<config>
-  <rematch>yes</rematch>
-</config>
+<ctd>
+  <strip-x-fwd-for>yes</strip-x-fwd-for>
+  <x-forwarded-for>yes</x-forwarded-for>
+  <allow-http-range>yes</allow-http-range>
+  <tcp-bypass-exceed-queue>yes</tcp-bypass-exceed-queue>
+  <udp-bypass-exceed-queue>yes</udp-bypass-exceed-queue>
+</ctd>
 <management>
-  <hostname-type-in-syslog>FQDN</hostname-type-in-syslog>
   <enable-log-high-dp-load>yes</enable-log-high-dp-load>
   <max-rows-in-csv-export>1048576</max-rows-in-csv-export>
   <api>
     <key>
-      <lifetime>525600</lifetime>
+      <lifetime>{{ API_KEY_LIFETIME }}</lifetime>
     </key>
   </api>
   <admin-lockout>
@@ -17,14 +20,6 @@
   <idle-timeout>10</idle-timeout>
   <auto-acquire-commit-lock>yes</auto-acquire-commit-lock>
 </management>
-<auto-mac-detect>yes</auto-mac-detect>
-<ctd>
-  <strip-x-fwd-for>yes</strip-x-fwd-for>
-  <x-forwarded-for>yes</x-forwarded-for>
-  <allow-http-range>yes</allow-http-range>
-  <tcp-bypass-exceed-queue>yes</tcp-bypass-exceed-queue>
-  <udp-bypass-exceed-queue>yes</udp-bypass-exceed-queue>
-</ctd>
 <wildfire>
   <file-size-limit>
     <entry name="pe">
@@ -61,6 +56,9 @@
   <report-benign-file>yes</report-benign-file>
   <report-grayware-file>yes</report-grayware-file>
 </wildfire>
+<config>
+  <rematch>yes</rematch>
+</config>
 <application>
   <notify-user>yes</notify-user>
   <bypass-exceed-queue>no</bypass-exceed-queue>
