@@ -256,8 +256,9 @@ snippets:
     file: zone_protection_profile.xml
   - name: interface
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
-    file: network_interface_.xml
+    file: network_interface.xml
   - name: virtual_router
+    when: "'l3_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: network_virtual_router.xml
   - name: zone
