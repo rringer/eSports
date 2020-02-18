@@ -20,7 +20,7 @@ labels:
 variables:
   - name: TARGET_IP
     description: NGFW IP or Hostname
-    default: 192.168.55.10
+    default: 192.168.0.1
     type_hint: fqdn_or_ip
   - name: TARGET_USERNAME
     description: NGFW Username
@@ -30,6 +30,10 @@ variables:
     description: NGFW Password
     default: admin
     type_hint: password
+  - name: FW_NAME
+    description: Firewall hostname
+    default: panos-01
+    type_hint: text
   - name: MGMT_TYPE
     description: firewall management IP type
     default: dhcp-client
