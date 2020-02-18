@@ -29,16 +29,25 @@ variables:
     cbx_list:
       - key: Content Update
         value: content_update
+  - name: TARGET_IP
+    description: NGFW IP or Hostname
+    default: 192.0.2.1
+    type_hint: fqdn_or_ip
+  - name: TARGET_USERNAME
+    description: NGFW Username
+    default: admin
+    type_hint: text
+  - name: TARGET_PASSWORD
+    description: NGFW Password
+    default:
+    type_hint: password
 
 
 snippets:
 # workflow stages for full refresh and configuration
-# reset config to empty state
-# poor mans userid based on local DHCP log events
-#  - name: ironskillet_eSports_20200206_1
-#    when: "'ironskillet' in add_options"
   - name: ngfw_content_update_eSports_20200206_1
     when: "'content_update' in add_options"
+  - name: get_interface_and_zone_names_eSports_20200206_1
   - name: new_configuration_workflow_panos_v90_eSports_20200206_1
     when: "'new_configuration' in config_type"
   - name: merge_configuration_workflow_panos_v90_eSports_20200206_1
