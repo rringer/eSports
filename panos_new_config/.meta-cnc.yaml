@@ -271,7 +271,7 @@ snippets:
     when: "'vw_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-wire
     file: network_virtual_wire.xml
-   - name: virtual_router
+  - name: virtual_router
     when: "'l3_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
     file: network_virtual_router.xml
