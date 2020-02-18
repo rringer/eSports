@@ -254,9 +254,14 @@ snippets:
   - name: zone_protection_profile
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/profiles/zone-protection-profile
     file: zone_protection_profile.xml
-  - name: interface
+  - name: interface_l3
+    when: "'l3_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
-    file: network_interface.xml
+    file: network_interface_l3.xml
+  - name: interface_vw
+    when: "'vw_network' in network_type"
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
+    file: network_interface_vw.xml
   - name: virtual_router
     when: "'l3_network' in network_type"
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/virtual-router
