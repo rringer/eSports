@@ -2,7 +2,13 @@
 
 ## Overview
 
-eSports Skillet is designed to create the baseline configurations nessisary to support eSports.
+The eSports Skillet is designed to create the baseline configurations nessisary to support eSports.
+This includes options for:
+-IronSkillet configurations
+-Virtual Wire or L3 deployments
+-QoS prioritization for eSports and eSport streaming applications
+-Tuning rule for day-2 policy optimizer
+
 
 The security policy provides for outbound policies using IronSkillet
 best practice security profiles and groups where it was possible.
