@@ -22,15 +22,15 @@ variables:
   - name: TARGET_IP
     description: NGFW IP or Hostname
     default: 192.0.2.1
-    type_hint: fqdn_or_ip
+    type_hint: hidden
   - name: TARGET_USERNAME
     description: NGFW Username
     default: admin
-    type_hint: text
+    type_hint: hidden
   - name: TARGET_PASSWORD
     description: NGFW Password
     default:
-    type_hint: password
+    type_hint: hidden
 
 
 # Snippets is an ordered list of configuration xml fragments that will be pushed to the PAN-OS NGFW. The xpath
