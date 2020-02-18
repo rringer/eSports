@@ -23,19 +23,23 @@
 {% else %}
 <entry name="{{ zone_name_trust }}">
   <network>
-    <layer3/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
     <log-setting>default</log-setting>
     <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+    <layer3>
+      <member>{{ interface_untrust }}</member>
+    </layer3>
   </network>
   <enable-user-identification>yes</enable-user-identification>
 </entry>
 <entry name="{{ zone_name_untrust }}">
   <network>
-    <layer3/>
     <zone-protection-profile>Recommended_Zone_Protection</zone-protection-profile>
     <log-setting>default</log-setting>
     <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
+    <layer3>
+      <member>{{ interface_untrust }}</member>
+    </layer3>
   </network>
 </entry>
 {% endif %}
