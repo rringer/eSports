@@ -27,7 +27,7 @@
     <log-setting>default</log-setting>
     <enable-packet-buffer-protection>yes</enable-packet-buffer-protection>
     <layer3>
-      <member>{{ interface_untrust }}</member>
+      <member>{{ interface_trust }}</member>
     </layer3>
   </network>
   <enable-user-identification>yes</enable-user-identification>
